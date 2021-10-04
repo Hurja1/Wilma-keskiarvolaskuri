@@ -1,0 +1,16 @@
+{
+    "name":"Keskiarvolaskuri",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+        "matches":["<Wilman 'Opinnot' sivun linkki>", "<Wilman 'Opinnot' sivun linkki>?view=tree"],
+        "js": ["getData.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_tit": "Keskiarvolaskuri"
+    }
+
+}
